@@ -18,14 +18,14 @@ class Anfibio(Animal):
     def crearRana(cls, nombre, edad, genero):
         rana = Anfibio(nombre, edad, "selva", genero, "rojo", True)
         cls.ranas += 1
-        cls._listado.append(rana)
+        # cls._listado.append(rana)
         return rana
 
     @classmethod
     def crearSalamandra(cls, nombre, edad, genero):
         salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
         cls.salamandras += 1
-        cls._listado.append(salamandra)
+        # cls._listado.append(salamandra)
         return salamandra
 
     def getColorPiel(self):

@@ -18,14 +18,14 @@ class Pez(Animal):
     def crearSalmon(cls, nombre, edad, genero):
         salmon = Pez(nombre, edad, "oceano", genero, "rojo", 6)
         cls.salmones += 1
-        cls._listado.append(salmon)
+        # cls._listado.append(salmon)
         return salmon
 
     @classmethod
     def crearBacalao(cls, nombre, edad, genero):
         bacalao = Pez(nombre, edad, "oceano", genero, "gris", 6)
         cls.bacalaos += 1
-        cls._listado.append(bacalao)
+        # cls._listado.append(bacalao)
         return bacalao
 
     @classmethod
