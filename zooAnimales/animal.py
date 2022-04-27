@@ -12,7 +12,8 @@ class Animal:
     def movimiento(self):
         return "desplazarse"
 
-    def totalPorTipo(self):
+    @classmethod
+    def totalPorTipo(cls):
         from .pez import Pez
         from .mamifero import Mamifero
         from .ave import Ave
@@ -62,7 +63,7 @@ class Animal:
     def setZona(self, zona):
         self._zona = zona
 
-    def __str__(self):
+    def toString(self):
         return ("Mi nombre es " +
                 self._nombre +
                 ", tengo una edad de " +
