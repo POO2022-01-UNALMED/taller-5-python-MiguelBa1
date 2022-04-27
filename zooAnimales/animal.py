@@ -20,11 +20,11 @@ class Animal:
         from .ave import Ave
         from .reptil import Reptil
         from .anfibio import Anfibio
-        return str("Mamiferos: " + str(len(Mamifero.getListado())) +"\n" + 
-				"Aves: "+str(len(Ave.getListado()))+"\n" + 
-				"Reptiles: "+str(len(Reptil.getListado()))+"\n" + 
-				"Peces: "+str(len(Pez.getListado()))+"\n" + 
-				"Anfibios: "+str(len(Anfibio.getListado())))
+        return str("Mamiferos : " + str(len(Mamifero.getListado())) +"\n" + 
+				"Aves : "+str(len(Ave.getListado()))+"\n" + 
+				"Reptiles : "+str(len(Reptil.getListado()))+"\n" + 
+				"Peces : "+str(len(Pez.getListado()))+"\n" + 
+				"Anfibios : "+str(len(Anfibio.getListado())))
     
     @classmethod
     def getTotalAnimales(cls):
