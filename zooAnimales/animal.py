@@ -68,10 +68,11 @@ class Animal:
         n1 = ("Mi nombre es " +
                     self._nombre +
                     ", tengo una edad de " +
-                    str(self._nombre) +
+                    str(self._edad) +
                     ", habito en " +
-                    str(self._nombre) +
+                    str(self._habitat) +
                     " y mi genero es " +
                     self._genero)
         if self._zona != None: 
             n1 += (", la zona en la que me ubico es " + self._zona + ", en el " + self._zona.getZoo())
+        return n1
