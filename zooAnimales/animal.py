@@ -13,11 +13,11 @@ class Animal:
         return "desplazarse"
 
     def totalPorTipo(self):
-        from pez import Pez
-        from mamifero import Mamifero
-        from ave import Ave
-        from reptil import Reptil
-        from anfibio import Anfibio
+        from .pez import Pez
+        from .mamifero import Mamifero
+        from .ave import Ave
+        from .reptil import Reptil
+        from .anfibio import Anfibio
         return str("Mamiferos: " + str(len(Mamifero.getListado())) +"\n" + 
 				"Aves: "+str(len(Ave.getListado()))+"\n" + 
 				"Reptiles: "+str(len(Reptil.getListado()))+"\n" + 

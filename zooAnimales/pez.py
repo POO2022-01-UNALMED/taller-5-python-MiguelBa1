@@ -1,4 +1,4 @@
-from animal import Animal
+from .animal import Animal
 class Pez(Animal):
     salmones = 0
     bacalaos = 0

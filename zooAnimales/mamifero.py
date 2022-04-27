@@ -1,4 +1,4 @@
-from animal import Animal
+from .animal import Animal
 
 class Mamifero(Animal):
     caballos = 0
