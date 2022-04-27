@@ -8,6 +8,7 @@ class Animal:
         self._edad = edad
         self._habitat = habitat
         self._genero = genero
+        self._zona = None
 
     def movimiento(self):
         return "desplazarse"
@@ -64,12 +65,13 @@ class Animal:
         self._zona = zona
 
     def toString(self):
-        return ("Mi nombre es " +
-                self._nombre +
-                ", tengo una edad de " +
-                self._edad +
-                ", habito en " +
-                self._habitat +
-                " y mi genero es " +
-                self._genero +
-                (", la zona en la que me ubico es " + self._zona + ", en el " + self._zona.getZoo() if self._zona else ""))
+        n1 = ("Mi nombre es " +
+                    self._nombre +
+                    ", tengo una edad de " +
+                    str(self._nombre) +
+                    ", habito en " +
+                    str(self._nombre) +
+                    " y mi genero es " +
+                    self._genero)
+        if self._zona != None: 
+            n1 += (", la zona en la que me ubico es " + self._zona + ", en el " + self._zona.getZoo())
